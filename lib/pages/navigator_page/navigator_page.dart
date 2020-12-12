@@ -15,7 +15,7 @@ class NavigatorPage extends StatelessWidget {
             ElevatedButton(
               child: const Text('Inside tab view'),
               onPressed: () {
-                // 通常通りNavigator.pushをするとCupertinoTabViewのNavigationを参照するため
+                // 通常通りNavigator.pushをするとCupertinoTabViewのNavigatorを参照するため
                 // ナビゲーションバーが表示された状態で遷移します
                 Navigator.of(context).push<void>(
                   MaterialPageRoute(builder: (context) => NavigatorScreen())
